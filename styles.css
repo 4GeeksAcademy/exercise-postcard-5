@@ -1,0 +1,65 @@
+/* This will add a red border around every element */
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+
+body {
+	background: black;
+}
+
+.postcard {
+	background-color: white;
+	width: 600px;
+	height: 300px;
+	margin: auto;
+}
+
+.postcard-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+	padding-right: 1rem;
+}
+
+.postcard-header h1 {
+	width: 350px;
+	margin: 0;
+	padding-left: 1rem;
+}
+.postcard-body {
+	display: flex;
+}
+
+.body-left p:first-child {
+	margin-top: 0px;
+}
+.body-left,
+.body-right {
+	padding: 10px;
+	flex: 1;
+	/* width: fit-content; */
+}
+
+.body-left p {
+	font-size: 20px;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid grey;
+	font-size: 15px;
+}
+
+.postcard-footer {
+	text-align: center;
+}
+
+button {
+	background-color: darkgray;
+	padding: 5px;
+}
